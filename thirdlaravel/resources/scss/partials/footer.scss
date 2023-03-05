@@ -1,0 +1,257 @@
+a{
+    text-decoration: none;
+    color: #505050;
+}
+.footer-section{
+    background: #F9F9F9;
+}
+
+
+
+.footer-svg-logo {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.container.navigation-header{
+    padding: 1.5rem 1rem;
+}
+
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+    /* text-decoration: none; */
+    border: 0;
+    font-size: 18px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #505050;
+    box-shadow: none;
+    background-color: #FFFFFF;
+    text-decoration: underline;
+
+}
+
+.accordion {
+    color: #FFFFFF;
+    border: 0px;
+    border: white;
+}
+
+.accordion-button {
+    box-shadow: none;
+    color: #505050;
+}
+
+.accordion-item {
+    border: 0;
+    padding: 1rem 0;
+}
+
+.accordion-button::after {
+    transform: rotate(0deg);
+    color: #505050;
+    background-image: none;
+    content: url(/public/images/footerarrow.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    color: #000000;
+    transform: rotate(90deg);
+}
+
+li.footer-list-style {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #A0A0A0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.footer-company-text-div {
+    width: 79px;
+    height: 0px;
+    border: 1.5px solid #505050;
+    background: #505050;
+    margin-left: 13px;
+    margin-top: -1px;
+}
+
+.support-new-update,
+.privacy-terms-condition {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -8px;
+    margin-right: -6px;
+}
+
+.footer-straight-line {
+    /* width: 90%; */
+    height: 0px;
+    border: 0.5px solid #505050;
+    margin: 21px 13px;
+    border-color: #505050;
+}
+
+p.paragraph-footer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #505050;
+}
+
+.privacy-terms-condition {
+    padding: 0 1.5rem;
+}
+
+.copyright-link {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+
+}
+
+@media screen and (min-width:425px) {
+    .social-media-links {
+        padding: 0 23px;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .desktop-view-footer-design {
+        display: none;
+    }
+
+    .container.support-new-update {
+        display: none;
+    }
+
+    .container.privacy-term-copyright-socialmedia {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .footer-section {
+        padding-top: 11rem;
+    }
+
+    .footer-section-mobile-view {
+        display: none;
+    }
+
+    .desktop-view-footer-design {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0rem;
+    }
+
+    .company-resources-capabilities {
+        display: flex;
+    }
+
+    .company-resource-capabilities-item {
+        padding: 0 2rem;
+    }
+
+    .footer-desktop-list li.footer-list-style {
+        padding: 1rem 0;
+    }
+
+    .contact-us-desktop-heading {
+        padding: 1rem 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+
+    }
+
+    .advent-log-desktop {
+        padding-bottom: 2rem;
+    }
+
+    .support-new-update {
+        display: flex;
+        padding-top: 1.5rem;
+        padding-bottom: 0rem;
+        flex-direction: row-reverse;
+        justify-content: start;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    p.paragraph-footer {
+        padding-right: 43px;
+    }
+
+    .desktop-straight-line {
+        height: 0px;
+        border: 0.5px solid #505050;
+    }
+
+    .privacy-term-copyright-socialmedia {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .social-media-links {
+        padding: 5px 0;
+    }
+
+    .linkedln,
+    .twitter,
+    .instagram,
+    .youtube {
+        padding: 0 6px;
+    }
+
+    .privacy-terms-condition {
+        padding: 0 0;
+    }
+
+    .copyright-link.first, .copyright-link {
+        padding-left: 0;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.02em;
+        color: #505050;
+    }
+
+}
+
+@media screen and (min-width:1366px) {
+    .footer-section {
+        // padding: 0 13rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .footer-section {
+        // padding: 0 8rem;
+    }
+}

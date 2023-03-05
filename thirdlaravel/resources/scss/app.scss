@@ -1,0 +1,863 @@
+@import "partials/navigation";
+
+@import "partials/footer";
+
+// General styling
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Lato';
+    font-style: normal;
+}
+
+
+
+// End of General Styling 
+
+
+// common code
+@mixin common-text-heading-size{
+    // for section 3, 4, 5, heading 
+    
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 55px;
+    letter-spacing: 0.01em;
+    color: #505050;
+
+    @media screen and (min-width:1024px) {
+        font-weight: 600;
+        padding-top: 33px;
+        font-size: 35px;
+    }
+}
+
+@mixin common-text-para-size{
+    // for section 3, 4, 5, paragraph
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #505050;
+    @media screen and (min-width:425px) {
+        padding-right: 0rem;
+    }
+    @media screen and (min-width:1366px) {
+        font-size: 20px;
+    }
+    @media screen and (min-width:2560px) {
+        font-size: 24px;
+        line-height: 64px;
+    }
+}
+//
+@mixin common-img-size{
+    width: 100%; 
+}
+//
+@mixin common-padding-for-section {
+    padding: 6rem 6px;
+
+    @media screen and (min-width:425px){
+        padding: 6rem 2rem;
+    }
+    @media screen and (min-width:768px){
+        padding: 6rem 11rem;
+    }
+    @media screen and (min-width:1366px) {
+            padding: 9rem 19rem; 
+    }
+    
+}
+
+@mixin stratergy-measurability-common-heading{
+
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #505050;
+}
+
+//
+
+
+// End of common code 
+
+
+
+// Banner section
+
+.container-fluid{
+    padding: 0;
+}
+
+@media screen and (max-width:767px) {
+    .img-section-desktop{
+        display: none;
+    }
+    .amit-singh-desc-desktop{
+        display: none;
+    }
+}
+
+    .img-section-mobile{
+        width: 100%;
+        }
+                        
+    .sustanability-text{
+        position: absolute;
+        // left: 36px;
+        top: 221px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+    }
+
+    .breadcrum-navigation {
+        width: 80%;
+        position: absolute;
+        padding: 1rem 2rem;
+    }
+    .breadcrumb-item a,
+    .breadcrumb-item+.breadcrumb-item::before {
+        color: #FFFFFF;
+    }
+
+    .breadcrumb-item.active a {
+        color: #7B7B7B;
+
+    }
+    
+
+@media screen and (min-width:375px) {
+    .sustanability-text{
+        top: 280px;
+    }
+}
+@media screen and (min-width:420px) {
+    .sustanability-text{
+        top: 315px;
+    }
+}
+@media screen and (min-width:768px) {
+    .img-section-mobile{
+        display: none;
+    }
+    .img-section-desktop{
+        @include common-img-size;
+        
+    }
+    .sustanability-text{
+        top: 180px;
+        // left: 2rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    .sustanability-text{
+        // left: 5.5rem;
+        top: 270px;
+    }
+    .breadcrum-navigation{
+        padding: 1rem 5rem;
+    }
+}
+@media screen and (min-width:1366px) {
+    .sustanability-text{
+        // left: 5.5rem;
+        top: 358px;
+        font-size: 55px;
+    }
+}
+@media screen and (min-width:1600px) {
+    .sustanability-text{
+        // left: 11.5rem;
+        top: 463px;
+    }
+}
+@media screen and (min-width:1900px) {
+    .sustanability-text{
+        // left: 20.5rem;
+        top: 529px;
+    }
+}
+@media screen and (min-width:2560px) {
+    .sustanability-text{
+        top: 665px;
+        font-size: 78px;
+    }
+}
+
+
+
+
+// End of Banner section
+
+// amit-singh-section
+.amit-singh-section{
+    @include common-padding-for-section;
+}
+.amit-sing-img, .amit-singh-img-text{
+    @include common-img-size;
+    padding: 10px 0;
+}
+h2.amit-singh-heading {
+    @include common-text-heading-size;
+}
+p.amit-singh-desc{
+    @include common-text-para-size;
+}
+
+@media screen and (min-width:1024px) {
+    .amit-sing-main{
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 2rem;
+    }
+    p.amit-singh-desc{
+        display: none;
+    }
+    .amit-singh-desc-desktop{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #505050;
+        padding-right: 82px;
+    }
+}
+@media screen and (min-width:1294px) {
+    h2.amit-singh-heading{
+        font-size: 40px;
+    }
+    .amit-singh-desc-desktop{
+        line-height: 40px;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (min-width:1366px) {
+    
+    .amit-singh-text{
+        width: 55%;
+    }
+
+    h2.amit-singh-heading{
+        font-size: 40px;
+        padding-top: 58px;
+    }
+    .amit-singh-desc-desktop{
+        font-size: 16px;
+        line-height: 34px;
+        padding-right: 0;
+    }
+    .amit-singh-img{
+        width: 45%;
+    }
+
+    // .amit-singh-section {
+    //     padding: 9rem 19rem;
+    // }
+}
+@media screen and (min-width:1440px) {
+    h2.amit-singh-heading{
+        font-size: 45px;
+
+    }
+    .amit-singh-desc-desktop{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:1600px) {
+    h2.amit-singh-heading{
+        font-size: 53px;
+        padding-top: 84px;
+
+    }
+    .amit-singh-desc-desktop{
+        font-size: 24px;
+        line-height: 51px;
+    }
+}
+@media screen and (min-width:1900px) {
+    h2.amit-singh-heading{
+        font-size: 60px;
+        padding-top: 100px;
+
+    }
+    .amit-singh-desc-desktop{
+        font-size: 30px;
+        line-height: 55px;
+    }
+}
+
+
+@media screen and (min-width:2560px) {
+    h2.amit-singh-heading{
+        font-size: 60px;
+        padding-bottom: 30px;
+        padding-top: 112px;
+
+    }
+    .amit-singh-desc-desktop{
+        font-size: 32px;
+        line-height: 58px;
+    }
+}
+
+
+// End of amit-singh-section
+
+
+// about advent paragraph 
+
+ .about-avent-section{
+    @include common-padding-for-section;
+    
+    padding:3rem 6px;
+ }
+
+ .about-advent-text{
+    @include common-text-para-size;
+ }
+ .about-avent-section{
+     text-align: center;
+ }
+ @media screen and (min-width: 1024px) {
+    .about-advent-text{
+        line-height: 34px
+    }
+ }
+ @media screen and (min-width: 1600px) {
+    .about-avent-section {
+        padding: 9rem 24rem;
+    }
+ }
+ @media screen and (min-width: 1900px) {
+    .about-avent-section {
+        padding: 9rem 34rem;
+    }
+ }
+
+ @media screen and (min-width: 2560px) {
+    .about-advent-text{
+        line-height: 44px;
+        font-size: 24px;
+    }
+    .about-avent-section {
+        padding: 9rem 53rem;
+    }
+ }
+ 
+
+
+// End of about advent paragraph 
+
+// stratergy-measurability section
+
+
+
+.stratergy-measurability-section{
+    @include common-padding-for-section;
+    padding: 3rem 6px;
+}
+
+.stratergy-measurability-heading-text-mobile{
+    @include stratergy-measurability-common-heading;
+}
+
+.stratergy-measurability-para-text-mobile{
+    @include common-text-para-size;
+    margin-bottom: 3rem;
+}
+@media screen and (min-width:1024px) {
+    .stratergy-measurability-section{
+        padding: 0;
+        padding-bottom: 6rem;
+    }
+    .stratergy{
+        width: 50%;
+    }
+    .measurabillity{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:1023px) {
+    .measurabillity, .stratergy
+    {
+        .stratergy-measurability-para-text-desktop{
+            display: none;
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+    .measurabillity, .stratergy
+    {
+        .stratergy-measurability-para-text-mobile{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .measurabillity, .stratergy{
+   .stratergy-measurability-para-text-desktop{
+       @include common-text-para-size;
+       line-height: 34px;
+   }
+}
+   
+}
+@media screen and (min-width:2560px) {
+    .measurabillity, .stratergy{
+    .stratergy-measurability-para-text-desktop{
+        line-height: 40px;
+    }
+}
+}
+
+
+// stratergy-measurability section 
+
+// we are on mission
+.we-are-on-mission {
+    background-image: url(/public/images/green-back.webp);
+    background-size: cover;
+    /* width: 100%; */
+    height: 500px;
+    background-attachment: fixed;
+}
+.We-are-on-mission-heading{
+    @include common-text-heading-size;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.35);
+    padding-top: 280px;
+    width: 100%;
+    
+}
+@media screen and (min-width:375px) {
+    .We-are-on-mission-heading{
+        width: 96%;
+    } 
+}
+@media screen and (min-width:425px) {
+    .We-are-on-mission-heading{
+        width: 85%;
+    } 
+}
+
+
+@media screen and (max-width:767px) {
+    .We-are-on-mission-heading-desktop{
+        display: none;
+    } 
+}
+@media screen and (min-width:768px) {
+    .we-are-on-mission{
+        display: none;
+}
+.we-are-on-mission-desktop{
+    background-image: url(/public/images/desktop-green-back.webp);
+    background-size: contain;
+    // width: 100%; 
+
+    height: 196px;
+    background-attachment: fixed;
+}
+.We-are-on-mission-heading-desktop{
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 38px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.35);
+    padding-top: 40px;
+    padding-right: 226px;
+}
+}
+@media screen and (min-width:1024px) {
+    .We-are-on-mission-heading-desktop{
+        padding-right: 468px;
+    }
+}
+@media screen and (min-width:1366px) {
+    .We-are-on-mission-heading-desktop{
+        padding-right: 648px;
+    }
+}
+@media screen and (min-width:1440px) {
+    .We-are-on-mission-heading-desktop{
+        padding-right: 553px;
+        font-size: 45px;
+        line-height: 55px;
+        padding-top: 99px;
+    }
+    .we-are-on-mission-desktop{
+        height: 374px;
+    }
+}
+
+
+
+
+// .we-are-on-mission-heading{
+//     .amit-singh-heading.for-mission{
+//         line-height: 36px;
+//         color: #FFFFFF;
+//         text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.35);
+//         top: -321px;
+//     }
+//     .amit-singh-heading.for-mission{
+//         @include common-padding-for-section;
+//     }
+//  }
+//  @media screen and (min-width:375px) {
+//     .we-are-on-mission-heading{
+//         .amit-singh-heading.for-mission{
+//             top: -288px;
+//         }
+//     }
+//  }
+//  @media screen and (min-width:425px) {
+//     .we-are-on-mission-heading{
+//         .amit-singh-heading.for-mission{
+//             // top: 1607px;
+//         }
+//     }
+//  }
+//  @media screen and (min-width:768px) {
+//     .we-are-on-mission-heading{
+//         .amit-singh-heading.for-mission{
+//             top: -153px;
+//             padding: 0;
+//             padding-right: 14rem;
+//         }
+//     }
+//  }
+//  @media screen and (min-width:1024px) {
+//     .we-are-on-mission-heading{
+//         .amit-singh-heading.for-mission{
+//             top: -197px;
+//             padding-right: 25rem;
+//             line-height: 44px;
+//         }
+
+//     }
+
+//  }
+//  @media screen and (min-width:1294px) {
+//     .we-are-on-mission-heading{
+//         .amit-singh-heading.for-mission {
+//             top: -235px;
+//         }
+//     }
+
+//  }
+
+//  @media screen and (min-width:1366px) {
+//     .we-are-on-mission-heading{
+//         .amit-singh-heading.for-mission{
+//             top: -258px;
+//             padding-right: 22rem;
+//             font-size: 45px;
+//             line-height: 55px;
+//         }
+//     }
+//  }
+//  @media screen and (min-width:1440px) {
+//     .we-are-on-mission-heading{
+//         .amit-singh-heading.for-mission{
+//             padding-right: 35rem;
+//         }
+//     }
+//  }
+//  @media screen and (min-width:1600px) {
+//     .we-are-on-mission-heading{
+//         .amit-singh-heading.for-mission{
+//             top: -292px;
+//         }
+//     }
+//  }
+//  @media screen and (min-width:1900px) {
+//     .we-are-on-mission-heading{
+//         .amit-singh-heading.for-misssion{
+//             top: -334px;
+//             line-height: 60px;
+//             font-size: 75px;
+//         }
+//     }
+//  }
+
+
+//  @media screen and (min-width:2560px) {
+//     .we-are-on-mission-heading{
+//         .amit-singh-heading.for-mission{
+//             top: -500px;
+//             line-height: 105px;
+//             font-size: 73px;
+//             margin-left: -538px;
+//             padding-right: 36rem;
+
+//         }
+//     }
+//  }
+
+
+
+ 
+// we are on mission
+
+// Our impact section
+.our-impact-section{
+    @include common-padding-for-section;
+    background-color: black;
+    padding: 3rem 6px;
+
+     h2,  h3,p{
+        color: white;
+     }  
+
+     .slider-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     } 
+
+     .our-impact-sub-heading{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+     }
+     .flexing-site img{
+         padding: 19px 0;
+
+     }
+     .our-impact-sub-para{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+     }
+     .slick-dots{
+        width: 39%;
+     }
+
+     .slick-dots li button:before{
+        //  content: url(/public/images/Line\ 1831.svg);
+     }
+     .flexing-site{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .amit-singh-heading{
+        text-align: center;
+     }
+     
+    @media screen and (min-width:1024px) {
+        .slider-wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .main-our-impact{
+            display: flex;
+        }
+        .flexing-our-impact{
+            width: 40%;
+            // text-align: left;
+        }
+        .second-main{
+            width: 60%;
+            display: flex;
+            column-gap: 1rem;
+        }
+        .flexing-site{
+            width: 25%;
+        }
+        .flexing-head-para{
+            width: 75%;
+            text-align: left;
+        }
+        .flexing-site img{
+            width: 102px;
+        }
+        .amit-singh-heading {
+            padding-top: 0;
+            width: 10%;
+        }
+        .slick-dots{
+            display: none;
+        }
+        .slick-next, .slick-prev{
+            top: 122%;
+            width: 53px;
+            height: 53px;
+        }
+        .slick-next{
+            right: 295px;
+            transform: rotate(180deg);
+            top: 103.5%;
+        }
+        .slick-prev{
+            left: 217px;
+        }
+        .slick-next:before, .slick-prev:before{
+            font-size: 44px;
+            content: url(/public/images/Group\ 1730.png);
+        }
+        .flexing{
+            text-align: left;
+            padding-left: 5px;
+        }
+    }
+    @media screen and (min-width:1294px) {
+        .slick-next{
+            right: 562px;
+        }
+    }
+    @media screen and (min-width:1366px) {
+        .slick-next{
+            right: 374px;
+        }
+    }
+    @media screen and (min-width:1440px) {
+        .slick-next{
+            right: 449px;
+        }
+    }
+    @media screen and (min-width:1550px) {
+        .slick-next{
+            right: 550px;
+        }
+    }
+
+
+    @media screen and (min-width:1600px) {
+        .slick-next{
+            right: 567px;
+        }
+        .slick-prev{
+            left: 264px;
+        }
+    }
+    @media screen and (min-width:1900px) {
+        .slick-next{
+            right: 726px;
+        }
+        .slick-prev{
+            left: 393px;
+        }
+    }
+
+
+    @media screen and (min-width:2560px) {
+        .slick-next{
+            right: 727px;
+        }
+        .slick-prev{
+            left: 414px;
+        }
+    }
+}
+
+
+
+
+
+
+
+// End of Our impact section
+
+
+// Key Updates section
+
+.Key-updates-section{
+    @include common-padding-for-section;
+    // padding-top: 5rem;
+    // padding-bottom: 5rem;
+
+    .keys-img{
+        // width: 100%;
+    }
+    .slick-slide{
+        margin: 0px 10px;
+    }
+    .slick-slide img{
+        width: 100%;
+    }
+    .amit-singh-heading{
+        padding-top: 0;
+        padding-bottom: 3px;
+    }
+    .slick-slider{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .slick-dots{
+        width: 39%;
+     }
+
+     .slick-dots li button:before{
+         content: url(/public/images/Line\ 1826.svg);
+         color: black;
+     }
+     .key-updates-heading-link{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+
+        color: #505050;
+        padding: 1rem 0;
+     }
+     .key-updates-para-link{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: #787878;
+     }
+     .key-style{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 152%;
+        letter-spacing: 0.02em;
+
+        color: #4DA8FC;
+
+     }
+
+
+    
+    
+}
+@media screen and (min-width:768px) {
+    .Key-updates-section {
+        padding: 6rem 5rem;
+    }
+}
+
+
+// End of Key Updates section
+
+
